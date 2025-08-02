@@ -13,11 +13,11 @@ Bu proje, Python ile geliştirilen basit bir **yazıyı sese dönüştürme uygu
 ##  Proje Yapısı
 
 text_to_speech/
-├── app.py # Streamlit arayüzü
-├── gtts_makinesi.py # TTS fonksiyonu (gTTS işlemi burada)
-├── mp3/ # Oluşan ses dosyalarının bulunduğu klasör
-├── requirements.txt # Gerekli kütüphaneler
-└── README.md # Bu dosya
+  |--app.py # Streamlit arayüzü
+  |--gtts_makinesi.py # TTS fonksiyonu (gTTS işlemi burada)
+  |--mp3/ # Oluşan ses dosyalarının bulunduğu klasör
+  |--requirements.txt # Gerekli kütüphaneler
+  |--README.md # Bu dosya
 
 ## Kurulum ve Çalıştırma
 

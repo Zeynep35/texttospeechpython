@@ -1,4 +1,9 @@
-from gtts import gTTS
-text = "how are you today?"
-tts = gTTS(text=text, lang="en")
-tts.save("mp3")
+import streamlit as st
+from gtts_makinesi import yaziyi_sese_donustur
+
+st.title("Yazıyı ses dönüştüren uygulamaya hoşgeldiniz!")
+text = st.text_input("Dönüşmesini istediğiniz yazıyı yazın lütfen: ")
+
+if st.button("dönüştür"):
+    yaziyi_sese_donustur(text)
+    st.success("ses dosyası hazır.")
